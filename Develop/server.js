@@ -46,6 +46,16 @@ const note = createNewNote(req.body, notes);
 res.json(note);
 });
 
+// DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete
+app.delete('/api/notes/:id', (req, res) => {
+    const { id } = req.params;
+  
+    const delNote = notes.findIndex(note => note.id ==id);
+  
+    notes.splice(delNote, 1);
+    return res.send();
+  });
+
 app.listen(PORT, () => {
     console.log(`App listening on PORT ${PORT}`);
   });
