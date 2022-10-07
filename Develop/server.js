@@ -45,3 +45,7 @@ req.body.id = generateUniqueId();
 const note = createNewNote(req.body, notes);
 res.json(note);
 });
+
+app.listen(PORT, () => {
+    console.log(`App listening on PORT ${PORT}`);
+  });
