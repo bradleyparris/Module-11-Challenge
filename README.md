@@ -1,7 +1,7 @@
 # Note Taker
 
 ## Deployed site
-https://bradleyparris.github.io/Module-11-Challenge/
+https://polar-mesa-87748.herokuapp.com/notes
 
 ## Description
 This application allows you to take notes consisting of a title and description. You can save and delete the notes. The saved notes will still be there if you choose to exit the application and open it up another time. Simply write down your note, and click the "save" button on the top right of the page. If you want to start a new note, simply choose the "+" button at the top right. To delete any note, click the red trashcan next to the note you wish to delete!
